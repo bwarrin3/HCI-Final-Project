@@ -1,0 +1,129 @@
+/* Work in Progress - Gabe */
+
+/* General styles for layout and grid */
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Default background color for the main content (super soft light red) */
+.main-content {
+    background-color: #fbe2e2; /* Very light soft red */
+    position: relative;
+    padding: 6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Toggle Button Style */
+.toggle-button {
+    position: absolute; /* Absolute positioning relative to .main-content */
+    top: 2rem; /* Space from the top of the content section (below navigation bar) */
+    left: 1rem; /* Space from the left of the content */
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c757d; /* Grey button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Grid layout for clickable boxes */
+.golden-rules-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four boxes per row */
+    gap: 2rem; /* Space between boxes */
+    margin-bottom: 3rem; /* Extra space after grid */
+    justify-content: center;
+}
+
+/* Navigation boxes (rule-boxes) */
+.rule-box {
+    background-color: #f9c5c5; /* Soft light red */
+    border: 2px solid #000;
+    padding: 4rem; /* Reduced size of boxes */
+    text-align: center;
+    font-size: 1.25rem; /* Adjusted font size */
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rule-box:hover {
+    transform: scale(1.1); /* Subtle hover effect */
+    background-color: #f5a5a5; /* Slightly darker red on hover */
+}
+
+.green-theme .rule-box {
+    background-color: #c5f9c5; /* Soft light green */
+}
+
+/* Green theme hover effect */
+.green-theme .rule-box:hover {
+    background-color: #a5f5a5; /* Slightly darker green on hover */
+}
+
+/* Green-theme for body background */
+.green-theme {
+    background-color: #f0fdf0; /* Light green background */
+}
+
+/* Section layout for rules */
+.rule-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem; /* Space between grid and sections */
+}
+
+/* Individual rule sections */
+.rule-section {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.rule-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rule-section .content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rule-section .content p {
+    flex: 2;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.rule-section .content img {
+    flex: 1;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Ensure good examples are hidden by default */
+.good-example {
+    display: none;
+}
+
+/* Ensure bad examples are visible by default */
+.bad-example {
+    display: block;
+}
