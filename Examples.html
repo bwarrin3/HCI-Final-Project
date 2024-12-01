@@ -1,0 +1,322 @@
+<!-- Styled how I want, actual content still needed - Gabe-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Example - Section Based</title>
+    <link rel="stylesheet" href="./css/Examples.css">
+    <link rel="stylesheet" href="./css/shared.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <ul class="nav-bar">
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./quiz.html">Quiz</a></li>
+        <li><a href="./rules.html">8&nbsp;Golden&nbsp;Rules</a></li>
+        <li><a href="./Examples.html">Examples</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./team.html">Meet&nbsp;the&nbsp;Team</a></li>
+    </ul>
+
+    <!-- Grid of Navigation Boxes -->
+    <div class="golden-rules-grid">
+        <a href="#consistency" class="rule-box">Consistency</a>
+        <a href="#shortcuts" class="rule-box">Shortcuts</a>
+        <a href="#feedback" class="rule-box">Feedback</a>
+        <a href="#dialogue" class="rule-box">Dialogue</a>
+        <a href="#errorHandling" class="rule-box">Error Handling</a>
+        <a href="#permitReversal" class="rule-box">Permit Reversal</a>
+        <a href="#locusControl" class="rule-box">Locus Control</a>
+        <a href="#memoryLoad" class="rule-box">Memory Load</a>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">Scroll to Top</button>
+
+
+    <!-- Rule Sections -->
+    <div class="main-content">
+
+        <!-- Section: Consistency -->
+        <div id="consistency" class="rule-section">
+            <h2>Consistency</h2>
+            <button class="toggle-button" data-target="consistency">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Consistent navigation and design make users feel comfortable and reduce the need to relearn interactions.
+                    </p>
+                    <p class="bad-example">
+                        Inconsistent navigation menus or page designs force users to relearn how to interact with each page.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="img/consistency-good.png" alt="Good example of consistency">
+                        <figcaption>
+                            <a href="https://www.apple.com/apple-arcade/" target="_blank" rel="noopener noreferrer">
+                                https://www.apple.com/apple-arcade/
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="img/consistency-bad.png" alt="Bad example of consistency">
+                        <figcaption>
+                            <a href="https://www.lingscars.com/about" target="_blank" rel="noopener noreferrer">
+                                https://www.lingscars.com/about
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Shortcuts -->
+        <div id="shortcuts" class="rule-section">
+            <h2>Shortcuts</h2>
+            <button class="toggle-button" data-target="shortcuts">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Keyboard shortcuts and quick navigation options improve efficiency for power users.
+                    </p>
+                    <p class="bad-example">
+                        A site that doesn't support keyboard shortcuts forces frequent users to rely on repetitive clicks.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/shortcuts-good.jpg" alt="Good example of shortcuts">
+                        <figcaption>
+                            <a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener noreferrer">
+                                https://www.microsoft.com/en-us/edge
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/shortcuts-bad.jpg" alt="Bad example of shortcuts">
+                        <figcaption>
+                            <a href="https://www.example.com/bad-shortcuts" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/bad-shortcuts
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Feedback -->
+        <div id="feedback" class="rule-section">
+            <h2>Feedback</h2>
+            <button class="toggle-button" data-target="feedback">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Providing immediate feedback after user actions reassures them and builds confidence in the system.
+                    </p>
+                    <p class="bad-example">
+                        A button that doesn’t visually change or provide confirmation after being clicked confuses users.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/feedback-good.jpg" alt="Good example of feedback">
+                        <figcaption>
+                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                                https://www.google.com
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/feedback-bad.jpg" alt="Bad example of feedback">
+                        <figcaption>
+                            <a href="https://www.example.com/feedback-bad" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/feedback-bad
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Dialogue -->
+        <div id="dialogue" class="rule-section">
+            <h2>Dialogue</h2>
+            <button class="toggle-button" data-target="dialogue">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Dialogues that are clear and concise help users navigate without confusion.
+                    </p>
+                    <p class="bad-example">
+                        Overly complex dialogue boxes or forms create frustration for users.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/dialogue-good.jpg" alt="Good example of dialogue">
+                        <figcaption>
+                            <a href="https://www.example.com/good-dialogue" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/good-dialogue
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/dialogue-bad.jpg" alt="Bad example of dialogue">
+                        <figcaption>
+                            <a href="https://www.example.com/bad-dialogue" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/bad-dialogue
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Error Handling -->
+        <div id="errorHandling" class="rule-section">
+            <h2>Error Handling</h2>
+            <button class="toggle-button" data-target="errorHandling">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Clear and informative error messages help users understand the issue and fix it.
+                    </p>
+                    <p class="bad-example">
+                        Vague error messages that provide no guidance leave users confused.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/errorHandling-good.jpg" alt="Good example of error handling">
+                        <figcaption>
+                            <a href="https://www.example.com/good-error-handling" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/good-error-handling
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/errorHandling-bad.jpg" alt="Bad example of error handling">
+                        <figcaption>
+                            <a href="https://www.example.com/bad-error-handling" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/bad-error-handling
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Permit Reversal -->
+        <div id="permitReversal" class="rule-section">
+            <h2>Permit Reversal</h2>
+            <button class="toggle-button" data-target="permitReversal">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Allowing users to undo their actions prevents frustration and helps recover from mistakes.
+                    </p>
+                    <p class="bad-example">
+                        Actions that cannot be reversed create stress and limit user control.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/permitReversal-good.jpg" alt="Good example of permit reversal">
+                        <figcaption>
+                            <a href="https://www.example.com/good-permit-reversal" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/good-permit-reversal
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/permitReversal-bad.jpg" alt="Bad example of permit reversal">
+                        <figcaption>
+                            <a href="https://www.example.com/bad-permit-reversal" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/bad-permit-reversal
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Locus Control -->
+        <div id="locusControl" class="rule-section">
+            <h2>Locus Control</h2>
+            <button class="toggle-button" data-target="locusControl">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Giving users control over their interactions enhances engagement and confidence.
+                    </p>
+                    <p class="bad-example">
+                        Overly prescriptive systems that don’t allow user choice create frustration.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/locusControl-good.jpg" alt="Good example of locus control">
+                        <figcaption>
+                            <a href="https://www.example.com/good-locus-control" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/good-locus-control
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/locusControl-bad.jpg" alt="Bad example of locus control">
+                        <figcaption>
+                            <a href="https://www.example.com/bad-locus-control" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/bad-locus-control
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Memory Load -->
+        <div id="memoryLoad" class="rule-section">
+            <h2>Memory Load</h2>
+            <button class="toggle-button" data-target="memoryLoad">Toggle Good/Bad</button>
+            <div class="content">
+                <div class="text-container">
+                    <p class="good-example">
+                        Minimizing the cognitive load of users by displaying relevant information reduces strain.
+                    </p>
+                    <p class="bad-example">
+                        Complex forms or pages requiring memory of many details increase cognitive load.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <figure class="good-example">
+                        <img src="images/memoryLoad-good.jpg" alt="Good example of memory load">
+                        <figcaption>
+                            <a href="https://www.example.com/good-memory-load" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/good-memory-load
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="bad-example">
+                        <img src="images/memoryLoad-bad.jpg" alt="Bad example of memory load">
+                        <figcaption>
+                            <a href="https://www.example.com/bad-memory-load" target="_blank" rel="noopener noreferrer">
+                                https://www.example.com/bad-memory-load
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/examples.js"></script>
+</body>
+
+</html>
