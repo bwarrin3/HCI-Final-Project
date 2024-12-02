@@ -1,17 +1,25 @@
 h1 {
     text-align: center;
     font-size: 3rem;
+    margin: 1rem 0;
 }
 
 .main-content {
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for items */
+    justify-content: center; /* Center items horizontally */
+    gap: 1rem; /* Space between items */
 }
 
 .main-content ul {
-    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Items will wrap when screen size is smaller */
+    justify-content: center;
+    gap: 1rem; /* Space between team members */
 }
 
 .main-content ul li {
@@ -19,10 +27,16 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 300px; /* Set a maximum width for each team member card */
+    background-color: #f8f8f8;
+    border: solid black 0.125rem;
+    border-radius: 8px; /* Add slight rounding for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure content stays inside the card */
 }
 
 .main-content img {
-    width: 80%;
+    width: 100%; /* Make image width responsive */
     border: solid black 0.125rem;
 }
 
@@ -32,25 +46,60 @@ h1 {
     border: solid black 0.125rem;
     background-color: #ddd;
 }
+
 .image-container {
     position: relative;
-    width: 300px; /* Set the container's width */
-    height: 300px; /* Set the container's height */
+    width: 100%; /* Make container flexible */
+    max-width: 300px; /* Set a maximum width */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+    overflow: hidden; /* Ensure overlay image stays inside */
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover; /* Ensure the main image fits the container */
 }
 
 .image-container .overlay {
     position: absolute; /* Position relative to the container */
-    top: 50%; /* Move the overlay to 50% from the top */
-    left: 50%; /* Move the overlay to 50% from the left */
-    transform: translate(-50%, -50%); /* Center the overlay image */
-    width: 195px; /* Adjust width of the overlay */
-    height: 195px; /* Adjust height of the overlay */
-    object-fit: contain; /* Ensure the overlay scales nicely */
-    opacity: 1; /* Optional: Slight transparency */
+    top: 50%; /* Center overlay vertically */
+    left: 50%; /* Center overlay horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    width: 65%; /* Proportional width */
+    height: 65%; /* Proportional height */
+    object-fit: contain; /* Ensure overlay scales nicely */
+    opacity: 1; /* Fully visible */
+    pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduce header size for smaller screens */
+    }
+
+    .main-content ul li {
+        max-width: 90%; /* Expand cards to occupy more space */
+    }
+
+    .image-container {
+        max-width: 200px; /* Adjust image size for smaller devices */
+    }
+
+    .image-container .overlay {
+        width: 75%; /* Slightly larger overlay for smaller images */
+        height: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content ul {
+        flex-direction: column; /* Stack team members vertically */
+        gap: 1.5rem; /* Add more space between stacked items */
+    }
+
+    .main-content ul li {
+        width: 100%; /* Use full width for cards */
+    }
 }

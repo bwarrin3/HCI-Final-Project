@@ -45,3 +45,39 @@ function scrollToTop() {
 }
 
 
+
+// Functions for slideshows
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize all slideshows
+    initializeSlideshows();
+});
+
+function initializeSlideshows() {
+    const slideshows = document.querySelectorAll('.slideshow');
+
+    slideshows.forEach(slideshow => {
+        let slides = slideshow.querySelectorAll('.slide');
+        if (slides.length > 0) {
+            slides[0].classList.add('active'); // Show first slide initially
+        }
+    });
+}
+
+function changeSlide(button, n) {
+    let slideshow = button.parentElement;
+    let slides = slideshow.querySelectorAll('.slide');
+
+    // Find the current active slide
+    let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+    if (currentIndex === -1) currentIndex = 0; // Default to first slide
+
+    // Calculate the new slide index
+    let newIndex = (currentIndex + n + slides.length) % slides.length;
+
+    // Update slide visibility
+    slides[currentIndex].classList.remove('active');
+    slides[newIndex].classList.add('active');
+}
+
+
+
