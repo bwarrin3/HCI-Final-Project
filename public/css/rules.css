@@ -1,7 +1,11 @@
 body {
     height: 100vh;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
+}
+
+.rule-box {
+    background-color: rgb(206, 219, 243);
 }
 
 .all-content {
@@ -9,6 +13,7 @@ body {
     max-height: 89.3vh; /* Increasing the max height makes the navbar change y-height compared to other pages */
 }
 
+/* legacy sidebar css
 .sidebar {
     flex: 1;
     background-color: #ddd;
@@ -40,7 +45,7 @@ body {
     color: black
     
 }
-
+*/
 .all-content > div {
     flex: 2.75;
     overflow: scroll;
