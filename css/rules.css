@@ -6,7 +6,7 @@ body {
 
 .all-content {
     display: flex;
-    max-height: 90vh;
+    max-height: 89.3vh; /* Increasing the max height makes the navbar change y-height compared to other pages */
 }
 
 .sidebar {

@@ -31,21 +31,25 @@ Good Examples:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggle Example - Section Based</title>
-    <link rel="stylesheet" href="./css/Examples.css">
     <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/Examples.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <ul class="nav-bar">
-        <li><a href="./login.html">Login</a></li>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./quiz.html">Quiz</a></li>
-        <li><a href="./rules.html">8&nbsp;Golden&nbsp;Rules</a></li>
-        <li><a href="./Examples.html">Examples</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./team.html">Meet&nbsp;the&nbsp;Team</a></li>
-    </ul>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/8GoldenRules_Logo_v2.png" alt="Logo">
+        </div>
+        <ul class="nav-bar">
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+            <li><a href="./rules.html">8&nbsp;Golden&nbsp;Rules</a></li>
+            <li><a href="./Examples.html">Examples</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./team.html">Meet&nbsp;the&nbsp;Team</a></li>
+        </ul>
+    </header>
 
     <!-- Grid of Navigation Boxes -->
     <div class="golden-rules-grid">
@@ -73,29 +77,93 @@ Good Examples:
             <div class="content">
                 <div class="text-container">
                     <p class="good-example">
-                        Consistent navigation and design make users feel comfortable and reduce the need to relearn interactions.
+                        The McMaster-Carr website is a prime example of how consistency, one of Ben Shneiderman's 8 Golden Rules of Interface Design, can enhance the user experience.
+                        Across different pages, the website maintains a uniform layout, including the placement of the navigation menu, search bar, and category links.
+                        This consistency allows users to seamlessly transition from the homepage to specific product listings without having to relearn how to navigate the interface.
+                        By presenting information in a predictable manner, McMaster-Carr fosters a sense of familiarity, making it easier for users to find the products they need.
+                    </p>
+                    <p class="good-example">
+                        Additionally, the visual design remains cohesive throughout the site, with consistent use of fonts, colors, and spacing.
+                        Product categories and subcategories are displayed in a uniform grid format, ensuring that users can quickly identify and compare items.
+                        Interactive elements, such as filters and search functionality, behave consistently across pages, reinforcing user expectations and minimizing errors.
+                        This adherence to consistency not only improves usability but also establishes a professional and trustworthy online presence, making McMaster-Carr a reliable resource for industrial supplies.
                     </p>
                     <p class="bad-example">
-                        Inconsistent navigation menus or page designs force users to relearn how to interact with each page.
+                        Craigslist serves as a classic example of poor consistency in web design, violating one of Ben Shneiderman's 8 Golden Rules of Interface Design.
+                        A closer look at the site highlights several inconsistencies that create a disjointed user experience.
+                        <br><br>
+                        First, the <strong>"post" and "account" buttons</strong> across different pages lack uniformity in design and placement.
+                        On the homepage, the "post" button appears in green with a text-only format, while the "account" button uses a different style and lacks a consistent icon. 
+                        Moving between pages, such as the "Activity Partners" search results and individual post pages, the design and layout of these buttons change or disappear entirely. 
+                        This inconsistency forces users to adapt to different layouts on each page, disrupting their navigation flow.
+                        <br><br>
+                        Additionally, the <strong>page layout and design elements</strong> like headers, menus, and search filters vary significantly. 
+                        The homepage uses a densely packed grid layout with blue hyperlinks and no clear hierarchy, while the search results page adopts a more linear list format. 
+                        The lack of cohesive typography, spacing, and color schemes across pages adds to the confusion, making the website feel outdated and difficult to navigate.
+                        <br><br>
+                        These inconsistencies hinder usability by forcing users to reorient themselves on each page, increasing cognitive load and decreasing efficiency. 
+                        In contrast, a well-designed website would maintain a consistent interface across all pages, allowing users to predict interactions and focus on their tasks rather than deciphering the layout.
                     </p>
                 </div>
-                <div class="image-container">
-                    <figure class="good-example">
-                        <img src="img/consistency-good.png" alt="Good example of consistency">
-                        <figcaption>
-                            <a href="https://www.apple.com/apple-arcade/" target="_blank" rel="noopener noreferrer">
-                                https://www.apple.com/apple-arcade/
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <figure class="bad-example">
-                        <img src="img/consistency-bad.png" alt="Bad example of consistency">
-                        <figcaption>
-                            <a href="https://www.lingscars.com/about" target="_blank" rel="noopener noreferrer">
-                                https://www.lingscars.com/about
-                            </a>
-                        </figcaption>
-                    </figure>
+                <div class="image-container slideshow-container">
+                    <div class="slideshow good-example">
+                        <div class="slide">
+                            <img src="img/examples/consistency-good1.png" alt="Good example of consistency">
+                            <figcaption>
+                                <a href="https://www.mcmaster.com/" target="_blank" rel="noopener noreferrer">
+                                    https://www.mcmaster.com/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="slide">
+                            <img src="img/examples/consistency-good2.png" alt="Good example of consistency">
+                            <figcaption>
+                                <a href="https://www.mcmaster.com/" target="_blank" rel="noopener noreferrer">
+                                    https://www.mcmaster.com/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="slide">
+                            <img src="img/examples/consistency-good3.png" alt="Good example of consistency">
+                            <figcaption>
+                                <a href="https://www.mcmaster.com/" target="_blank" rel="noopener noreferrer">
+                                    https://www.mcmaster.com/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                
+                    <div class="slideshow bad-example">
+                        <div class="slide">
+                            <img src="img/examples/consistency-bad1.png" alt="Bad example of consistency">
+                            <figcaption>
+                                <a href="https://akroncanton.craigslist.org/" target="_blank" rel="noopener noreferrer">
+                                    https://akroncanton.craigslist.org/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="slide">
+                            <img src="img/examples/consistency-bad2.png" alt="Another bad example of consistency">
+                            <figcaption>
+                                <a href="https://akroncanton.craigslist.org/" target="_blank" rel="noopener noreferrer">
+                                    https://akroncanton.craigslist.org/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="slide">
+                            <img src="img/examples/consistency-bad3.png" alt="Another bad example of consistency">
+                            <figcaption>
+                                <a href="https://akroncanton.craigslist.org/" target="_blank" rel="noopener noreferrer">
+                                    https://akroncanton.craigslist.org/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <!-- Add more slides here -->
+                        <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,32 +175,79 @@ Good Examples:
             <div class="content">
                 <div class="text-container">
                     <p class="good-example">
-                        Keyboard shortcuts and quick navigation options improve efficiency for power users.
+                        Microsoft Excel is an excellent example of how the "Shortcuts" rule, one of Ben Shneiderman's 8 Golden Rules of Interface Design, can enhance efficiency and user experience. 
+                        Shneiderman's "Shortcuts" rule suggests that frequent users should be given the ability to speed up their workflow through accelerators such as keyboard shortcuts or customizable options. 
+                        In Excel, this is implemented through a wide range of features that enable power users to perform tasks faster without relying on repetitive menu navigation.
+                        <br><br>
+                        For instance, Excel offers numerous keyboard shortcuts for common tasks such as copying (Ctrl+C), pasting (Ctrl+V), and saving (Ctrl+S). 
+                        These shortcuts significantly reduce the time it takes to perform frequent actions, allowing users to focus on data analysis rather than interface navigation. 
+                        Additionally, Excel allows for customization of shortcuts, letting users create personalized accelerators for even greater efficiency.
+                        <br><br>
+                        Beyond keyboard shortcuts, Excel also provides other forms of quick access, such as the ribbon interface with its grouped commands and the Quick Access Toolbar, which can be tailored to include frequently used features. 
+                        This customization enables users to streamline their work environment and tailor the interface to their unique needs. 
+                        By offering these shortcuts and customization options, Excel exemplifies how empowering users with faster, more efficient ways to interact with the software can improve their overall experience, especially for advanced or regular users.
                     </p>
                     <p class="bad-example">
-                        A site that doesn't support keyboard shortcuts forces frequent users to rely on repetitive clicks.
+                        The IRS website is a good example of an interface that lacks effective shortcuts, which are essential for improving efficiency for experienced users. 
+                        While the website provides services like filing taxes, checking refund status, and accessing forms, it requires users to go through multiple pages and menus to complete basic tasks. 
+                        This can be frustrating for frequent users, such as tax professionals or individuals who need to access information regularly.
+                        <br><br>
+                        For example, checking refund status, finding specific forms, or accessing past returns often involves navigating through several layers of menus or searching for specific pages. 
+                        The website doesn’t offer shortcuts to these common tasks, making the process slower and less efficient. 
+                        Additionally, there are no keyboard shortcuts or customizable access options for tasks users do frequently.
+                        <br><br>
+                        Without shortcuts or quicker ways to access important functions, the IRS website can feel cumbersome and time-consuming, especially for users who need to perform the same tasks regularly. 
+                        Adding shortcuts or direct links to frequently used sections would greatly improve the user experience and speed up common processes.
                     </p>
                 </div>
-                <div class="image-container">
-                    <figure class="good-example">
-                        <img src="images/shortcuts-good.jpg" alt="Good example of shortcuts">
-                        <figcaption>
-                            <a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener noreferrer">
-                                https://www.microsoft.com/en-us/edge
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <figure class="bad-example">
-                        <img src="images/shortcuts-bad.jpg" alt="Bad example of shortcuts">
-                        <figcaption>
-                            <a href="https://www.example.com/bad-shortcuts" target="_blank" rel="noopener noreferrer">
-                                https://www.example.com/bad-shortcuts
-                            </a>
-                        </figcaption>
-                    </figure>
+                <div class="image-container slideshow-container">
+                    <div class="slideshow good-example">
+                        <div class="slide">
+                            <img src="img/examples/shortcuts-good1.png" alt="Good example of Shortcuts">
+                            <figcaption>
+                                <a>
+                                    Microsoft Excel
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="slide">
+                            <img src="img/examples/shortcuts-good2.jpg" alt="Good example of Shortcuts">
+                            <figcaption>
+                                <a>
+                                    Microsoft Excel
+                                </a>
+                            </figcaption>
+                        </div>
+                        <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                
+                    <div class="slideshow bad-example">
+                        <div class="slide">
+                            <img src="img/examples/shortcuts-bad1.png" alt="Bad example of consistency">
+                            <figcaption>
+                                <a href="https://www.irs.gov/" target="_blank" rel="noopener noreferrer">
+                                    https://www.irs.gov/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <div class="slide">
+                            <img src="img/examples/shortcuts-bad2.png" alt="Bad example of consistency">
+                            <figcaption>
+                                <a href="https://www.irs.gov/" target="_blank" rel="noopener noreferrer">
+                                    https://www.irs.gov/
+                                </a>
+                            </figcaption>
+                        </div>
+                        <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
 
         <!-- Section: Feedback -->
         <div id="feedback" class="rule-section good">
