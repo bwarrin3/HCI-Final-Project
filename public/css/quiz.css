@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-content {
+    display: flex;
+    max-height: 90vh;
+    height: 90vh;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar > li {
+    background-color: white;
+    color: black;
+    border: solid black 0.125rem;
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 0.125rem 0;
+
+}
+
+.sidebar > li > button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black
+    
+}
+
+.all-content > div {
+    flex: 2.75;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.main-content > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-content > form > input {
+    margin: 1rem 0;
+    justify-self: right;
+    align-self: end;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #085394;
+    color: white;
+    border: solid black 0.0125rem;
+    border-radius: 1rem;
+}
+
+.main-content > form > div > h4 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+.main-content > form > div > .choices {
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.main-content > form > div > .choices > li {
+    margin: 0.25rem;
+}

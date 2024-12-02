@@ -7,6 +7,7 @@
     <title>8 Golden Rules - Login</title>
     <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/login.css">
+    <script defer src="./js/loginError.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,11 @@
             <h1>The Golden Rules</h1>
             <p>Learn the fundamentals of great webpages and start creating your dream site today!</p>
         </div>
-        <form>
+        <form method="post">
             <input type="text" id="username" name="username" placeholder="Username">
             <input type="password" id="password" name="password" placeholder="Password">
             <div>
-                <input type="button" id="login" name="login" value="Log In">
+                <input type="submit" id="login" name="login" value="Log In">
                 <input type="button" id="register" name="register" value="Register">
             </div>
         </form>
