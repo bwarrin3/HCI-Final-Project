@@ -4,282 +4,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8 Golden Rules - Quiz</title>
+    <title>8 Golden Rules - Home</title>
     <link rel="stylesheet" href="./css/quiz.css">
     <link rel="stylesheet" href="./css/shared.css">
-    <script src="../js/quizScoring.js"></script>
+    <script src="./js/quiz.js" defer></script>
 </head>
+
 <body>
-    <ul class="nav-bar">
-        <li class="nav"><a href="./login.html">Login</a></li>
-        <li class="nav"><a href="./index.html">Home</a></li>
-        <li class="nav"><a href="./quiz.html">Quiz</a></li>
-        <li class="nav"><a href="./rules.html">8&nbsp;Golden&nbsp;Rules</a></li>
-        <li class="nav"><a href="./Examples.html">Examples</a></li>
-        <li class="nav"><a href="./contact.html">Contact</a></li>
-        <li class="nav"><a href="./team.html">Meet&nbsp;the&nbsp;Team</a></li>
+    <header class="header">
+        <div class="logo">
+            <img src="./img/8GoldenRules_Logo_v2.png" alt="Logo">
+        </div>
+        <ul class="nav-bar">
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+            <li><a href="./rules.html">8&nbsp;Golden&nbsp;Rules</a></li>
+            <li><a href="./Examples.html">Examples</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./team.html">Meet&nbsp;the&nbsp;Team</a></li>
+        </ul>
+    </header>
+    <div class="all-content">
+    <ul class="sidebar">
+        <li><button class="quizQuestionNumber" id="1">1.</button></li>
+        <li><button class="quizQuestionNumber" id="2">2.</button></li>
+        <li><button class="quizQuestionNumber" id="3">3.</button></li>
+        <li><button class="quizQuestionNumber" id="4">4.</button></li>
+        <li><button class="quizQuestionNumber" id="5">5.</button></li>
+        <li><button class="quizQuestionNumber" id="6">6.</button></li>
+        <li><button class="quizQuestionNumber" id="7">7.</button></li>
+        <li><button class="quizQuestionNumber" id="8">8.</button></li>
+        <li><button class="quizQuestionNumber" id="9">9.</button></li>
+        <li><button class="quizQuestionNumber" id="10">10.</button></li>
     </ul>
-    <div class="main-content">
-        <h1 class="title">The Golden Rules Quiz</h1>
-        <p class="subtitle">Test your knowledge on what the rest of the site has taught you</p>
-        
-
-        <div class="choiceBox">
-        <h4>1: Most text editing applications allow key combinations to quickly copy, paste, cut, undo, etc. What rule describes these features?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question0" value="A" /><span>Enable Frequent Users to Use Shortcuts</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question0" value="B" /><span>Permit Easy Reversal of Actions</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question0" value="C" /><span>Reduce Short Term Memory Load</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question0" value="D" /><span>Strive for Consistency</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>2: If a user clicks on a button and doesn't know if clicking on the button has actually activated the button's function, which rule has not been followed?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question1" value="A" /><span>Offer Simple Error Handling</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question1" value="B" /><span>Design Dialogue to Yield Closure</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question1" value="C" /><span>Offer Informative Feedback</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question1" value="D" /><span>Support Internal Locus of Control</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>3: When designing how many icons should be on a website at the same time, how should you decide how many options to give the user at one time, given multiple options are needed?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question2" value="A" /><span>1</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question2" value="B" /><span>around 15</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question2" value="C" /><span>around 5</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question2" value="D" /><span>500</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>4: A textbox pops up and tells the user that the delete button they pressed has successfully deleted something. Which rule does this follow?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question3" value="A" /><span>Design Dialogue to Yield Closure</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question3" value="B" /><span>Permit Easy Reversal of Actions</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question3" value="C" /><span>Offer Simple Error Handling</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question3" value="D" /><span>Offer Informative Feedback</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>5: A website has a page with massive text and a desaturated blue blackground. Another page has multiple vibrant colors and lots of small paragraphs to explain the page. What rule is not being followed?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question4" value="A" /><span>Enable Frequent Users to Use Shortcuts</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question4" value="B" /><span>Offer Informative Feedback</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question4" value="C" /><span>Reduce Short Term Memory Load</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question4" value="D" /><span>Strive for Consistency</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>6: When designing error messages for the user, what should be output to the website for the user to know?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question5" value="A" /><span>The exact error that was printed to console</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question5" value="B" /><span>A custom message that most users will understand, describing what went wrong, whether the user or website caused it, and a suggestion to fix it</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question5" value="C" /><span>A message that says "something went wrong"</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question5" value="D" /><span>Nothing, the user can see what went wrong</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>7: A website meant for creating images only allows user to place visual elements on certain pixel intervals in relation to other elements and there is no way to turn this off. What rule is being ignored?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question6" value="A" /><span>Support Internal Locus of Control</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question6" value="B" /><span>Strive for Consistency</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question6" value="C" /><span>Enable Frequent Users to Use Shortcuts</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question6" value="D" /><span>Reduce Short Term Memory Load</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>8: What describes the easy reversal of actions golden rule?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question7" value="A" /><span>A user accidently deleted something, and now must recreate it from scratch</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question7" value="B" /><span>A user cannot delete anything, allowing them to would be dangerous</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question7" value="C" /><span>A user can press a 2 key combination to quickly undo a deletion</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question7" value="D" /><span>A user must go through customer service to get an employee to look into the website's update history to get its state restored</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>9: How can you reduce short term memory load if the user has a lot of options?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question8" value="A" /><span>Remove important options so the user does not get confused</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question8" value="B" /><span>Put some related options into a drop-down list rather than showing them all at once, or removing unneeded options</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question8" value="C" /><span>Keep all the options there if they are important</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question8" value="D" /><span>Use a tutorial to make the user understand everything before using the website</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-
-        <div class="choiceBox">
-        <h4>10: Some websites must prioritize different rules depending on their purpose. Which rule would be least important for an educational website for reading articles that allows for author contact and website navigation?</h4>
-            <ul class="choice"></ul>
-            <li>
-                <label>
-                    <input type="radio" name="question9" value="A" /><span>Reduce Short Term Memory Load</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question9" value="B" /><span>Strive for Consistency</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question9" value="C" /><span>Design Dialogue to Yield Closure</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question9" value="D" /><span>Support Internal Locus of Control</span>
-                </label>
-            </li>
-        </ul> <br><br> </div> <br>
-        
-
-
-        <button class="view-results" id="results-button" onclick="getScore()">View Results</button>
-        <span id="myResults" class="my-results">Results:</span>
+        <div class="main-content">
+            <form method="post">
+                <div id="1" class="question">
+                    <h4>1: Most text editing applications allow key combinations to quickly copy, paste, cut, undo, etc. What rule describes these features?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question0" value="A" /><span>Enable Frequent Users to Use Shortcuts</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question0" value="B" /><span>Permit Easy Reversal of Actions</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question0" value="C" /><span>Reduce Short Term Memory Load</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question0" value="D" /><span>Strive for Consistency</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="2" class="question">
+                    <h4>2: If a user clicks on a button and doesn't know if clicking on the button has actually activated the button's function, which rule has not been followed?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question1" value="A" /><span>Offer Simple Error Handling</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question1" value="B" /><span>Design Dialogue to Yield Closure</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question1" value="C" /><span>Support Internal Locus of Control</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question1" value="D" /><span>Offer Informative Feedback</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="3" class="question">
+                    <h4>3: When designing how many icons should be on a website at the same time, how should you decide how many options to give the user at one time, given multiple options are needed?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question2" value="A" /><span>1</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question2" value="B" /><span>around 5</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question2" value="C" /><span>around 15</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question2" value="D" /><span>500</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="4" class="question">
+                    <h4>4: A textbox pops up and tells the user that the delete button they pressed has successfully deleted something. Which rule does this follow?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question3" value="A" /><span>Permit Easy Reversal of Actions</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question3" value="B" /><span>Offer Simple Error Handling</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question3" value="C" /><span>Offer Informative Feedback</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question3" value="D" /><span>Design Dialogue to Yield Closure</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="5" class="question">
+                    <h4>5: A website has a page with massive text and a desaturated blue blackground. Another page has multiple vibrant colors and lots of small paragraphs to explain the page. What rule is not being followed?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question4" value="A" /><span>Enable Frequent Users to Use Shortcuts</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question4" value="B" /><span>Offer Informative Feedback</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question4" value="C" /><span>Strive for Consistency</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question4" value="D" /><span>Reduce Short Term Memory Load</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="6" class="question">
+                    <h4>6: When designing error messages for the user, what should be output to the website for the user to know?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question5" value="A" /><span>A custom message that most users will understand, describing what went wrong, whether the user or website caused it, and a suggestion to fix it</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question5" value="B" /><span>The exact error that was printed to console</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question5" value="C" /><span>A message that says "something went wrong"</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question5" value="D" /><span>Nothing, the user can see what went wrong</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="7" class="question">
+                    <h4>7: A website meant for creating images only allows user to place visual elements on certain pixel intervals in relation to other elements and there is no way to turn this off. What rule is being ignored?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question6" value="A" /><span>Strive for Consistency</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question6" value="B" /><span>Support Internal Locus of Control</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question6" value="C" /><span>Enable Frequent Users to Use Shortcuts</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question6" value="D" /><span>Reduce Short Term Memory Load</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="8" class="question">
+                    <h4>8: What describes the easy reversal of actions golden rule?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question7" value="A" /><span>A user can press a 2 key combination to quickly undo a deletion</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question7" value="B" /><span>A user must go through customer service to get an employee to look into the website's update history to get its state restored</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question7" value="C" /><span>A user cannot delete anything, allowing them to would be dangerous</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question7" value="D" /><span>A user accidently deleted something, and now must recreate it from scratch</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="9" class="question">
+                    <h4>9: How can you reduce short term memory load if the user has a lot of options?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question8" value="A" /><span>Keep all the options there if they are important</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question8" value="B" /><span>Remove important options so the user does not get confused</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question8" value="C" /><span>Put some related options into a drop-down list rather than showing them all at once, or removing unneeded options</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question8" value="D" /><span>Use a tutorial to make the user understand everything before using the website</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="10" class="question">
+                    <h4>10: Some websites must prioritize different rules depending on their purpose. Which rule would be least important for an educational website for reading articles that allows for author contact and website navigation?</h4>
+                    <ul class="choices">
+                        <li>
+                            <label><input type="radio" name="question9" value="A" /><span>Design Dialogue to Yield Closure</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question9" value="B" /><span>Support Internal Locus of Control</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question9" value="C" /><span>Strive for Consistency</span></label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="question9" value="D" /><span>Reduce Short Term Memory Load</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <input type="button" id="submit" name="submit" value="Submit Quiz">
+            </form>
+        </div>
     </div>
-
 </body>
-</html>
 
+</html>
