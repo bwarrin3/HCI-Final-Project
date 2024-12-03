@@ -2,24 +2,70 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0; /* Remove default body margin */
+}
+
+.header {
+    width: 100%;
+    background-color: #f8f9fa; /* Optional: background for navbar */
+    padding: 1rem;
 }
 
 .main-content {
+    display: flex; /* Flexbox layout for side-by-side alignment */
+    width: 100%; /* Full width of the content */
+    max-width: 1200px; /* Set max width for content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 2rem;
+    justify-content: flex-start; /* Space between text and image */
+    align-items: flex-start; /* Align text and image vertically */
+    flex: 1; /* Allow content to fill available height */
+}
+
+.text-section {
+    width: 50%; /* Left half for text */
+    text-align: left;
+    padding-right: 2rem; /* Add padding between text and image */
+}
+
+.text-section h1 {
+    text-align: left;
+    font-size: 3.5rem;
+    margin: 0 0 1rem;
+}
+
+.text-section p {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.image-section {
+    width: 50%; /* Right half for image */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 3rem 3rem;
-    flex: 1;
+    flex-direction: column; /* Stack image and caption */
+    align-items: center;
+    justify-content: center; /* Center image and caption vertically */
 }
 
-.main-content h1 {
-    margin: 0 0 2rem;
-    text-align: center;
-    font-size: 5rem;
+.image-section img {
+    width: 60%; /* Full width within the right container */
+    max-width: 500px; /* Limit maximum size */
+    height: auto;
 }
 
-.main-content p {
-    margin: 0;
+.caption {
+    font-size: 1.4rem;
     text-align: center;
-    font-size: 2.5rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.caption a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.caption a:hover {
+    text-decoration: underline;
 }
