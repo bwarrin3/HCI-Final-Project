@@ -87,3 +87,9 @@ body {
 .main-content > form > div > .choices > li {
     margin: 0.25rem;
 }
+
+.submit:hover{
+transition: 0.2s;
+background-color: rgba(85, 126, 190, 0.8);
+}
+
