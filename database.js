@@ -8,7 +8,7 @@ const app = express();
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "DebBruce1",
+    password: "",
     database: "mydb"
 });
 
