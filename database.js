@@ -8,7 +8,7 @@ const app = express();
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "DebBruce1",
+    password: "",
     database: "mydb"
 });
 
@@ -23,6 +23,10 @@ app.use(express.urlencoded());
 app.use(express.static("public"));
 
 app.get("", function (req, res) {
+    res.sendFile(__dirname + "/" + "index.html");
+});
+
+app.get("/index.html", function (req, res) {
     res.sendFile(__dirname + "/" + "index.html");
 });
 
