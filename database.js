@@ -40,6 +40,12 @@ app.post("/login.html", function (req, res) {
 
     var username = req.body.username;
     var password = req.body.password;
+
+    var buttonFlag = req.body.register;
+    console.log(buttonFlag);
+
+
+    if(!buttonFlag){
     var sql = 'SELECT * FROM users WHERE username = ? AND password = ?';
     con.query(sql, [username, password], function (err, result) {
         if (err) throw err;
@@ -48,8 +54,16 @@ app.post("/login.html", function (req, res) {
             idAge = 900000;
         }
     });
+    }
+    else{
+        var sql = 'INSERT INTO users(username, password) values( ? , ? )';
+    con.query(sql, [username, password], function (err) {
+        if (err) throw err;
+    });
+    }
 
     setTimeout(function () {
+        if(buttonFlag){idValue = -3}
         res.cookie('userId', idValue, { maxAge: idAge });
         res.redirect("/" + "login.html");
     }, 250);

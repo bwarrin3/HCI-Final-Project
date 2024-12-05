@@ -58,3 +58,21 @@ body {
     background-color: #3d9bed;
     cursor: pointer;
 }
+
+.signout{
+    background-color: #085394;
+    border: solid black 0.125rem;
+    border-radius: 1rem;
+    padding: 0rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    width: 6rem;
+    height: 5rem;
+    position:inherit(input)
+}
+
+.signout:hover{
+    background-color: #3d9bed;
+    cursor: pointer;
+}

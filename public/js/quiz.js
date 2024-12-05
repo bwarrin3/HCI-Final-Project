@@ -82,6 +82,8 @@ submit.addEventListener("click", function(e) {
 let userScore;
 let userScoreIndex = document.cookie.indexOf('userScore=');
 userScore = document.cookie.substring(userScoreIndex + 10);
+let userIDIndex = document.cookie.indexOf('userId=');
+userId = document.cookie.substring(userIDIndex+7, userScoreIndex-2);
 console.log(userScore);
 
 if (userScore && userScore != -1) {
@@ -91,11 +93,12 @@ if (userScore && userScore != -1) {
     }, 100);
     
 }
-
-if (userScore && userScore == -1) {
+//alert(document.cookie + " ID: (" + userId + ") SCORE: (" + userScore);
+if (userId == -1 || userId == -2) {
     submit.disabled = true;
     setTimeout(function () {
         alert("Please sign in first!");
+        window.location.href = "/login.html";
     }, 100);
     
 }
